@@ -21,7 +21,6 @@ public class LoginActivity  extends AppCompatActivity {
 
     EditText nameEditText, contactEditText, organisationEditText, folkGuideEditText, roundChantingEditText;
     TextView dateOfBirthEditText;
-    TextInputLayout dateOgBirthTIL;
     Button signUpButton;
 
 
@@ -36,7 +35,6 @@ public class LoginActivity  extends AppCompatActivity {
         roundChantingEditText = findViewById(R.id.roundsChanting);
         signUpButton = findViewById(R.id.signUpButton);
         dateOfBirthEditText = findViewById(R.id.dateOfBirthEditText);
-        dateOgBirthTIL = findViewById(R.id.dateOfBirth);
 
         final Calendar calendar = Calendar.getInstance();
         final DatePickerDialog.OnDateSetListener date = new DatePickerDialog.OnDateSetListener() {
