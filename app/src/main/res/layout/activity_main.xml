@@ -6,11 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/baba" />
+
+    <Button
         android:id="@+id/registerButton"
+        android:layout_width="200dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/fui_idp_button_background_anonymous"
+        android:fontFamily="@font/productsansmedium"
         android:text="Register"
+        android:textColor="@android:color/white"
+        android:textSize="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
         tools:ignore="MissingConstraints" />
 
 </android.support.constraint.ConstraintLayout>
